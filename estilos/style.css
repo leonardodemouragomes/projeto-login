@@ -3,7 +3,7 @@
 :root{
     --cor01: #617E80;
     --cor02: #7F6D61;
-    --cor03: #5f5149b6;
+    --cor03: #AFCACC;
 }
 
 * {
@@ -32,7 +32,7 @@ section#login {
     transform: translate(-50%, -50%);
     background-color: white;
     width: 275px;
-    height: 525px;
+    height: 540px;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
@@ -47,6 +47,10 @@ section#login > div#imagem {
     height: 200px;
 }
 
+div#formulario > p {
+    padding: 5px;
+}
+
 div#formulario {
     padding: 10px;
 }
@@ -55,17 +59,33 @@ div#formulario {
     background-color: var(--cor01);
     height: 40px;
     color: var(--cor02);
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    padding: 5px;
 }
 
 .campo span {
-    color: black;
-    padding: 5px;
-    font-size: 1.2em;
+    color: white;
+    font-size: 2em;
+    height: 40px;
 }
 
-form > input[type='submit']  {
+.campo > input {
+    background-color: var(--cor03);
+    font-size: 1em;
+    width: calc(100% - 50px);
+    height: 100%;
+    transform: translateY(-11px);
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+}
+
+.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type='submit'] {
     width: 100%;
     height: 40px;
     display: block;
@@ -76,7 +96,8 @@ form > input[type='submit']  {
     padding: 5px;
     margin: 5px 0px;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: normal;
+    font-size: 1.1em;
 }
 
 form > input[type='submit']:hover {
@@ -99,4 +120,8 @@ form > a:hover {
     transition: color .5s;
     color: var(--cor01);
     border: 1px solid var(--cor01);
+}
+
+form > a > span {
+    transform: translateY(7px);
 }

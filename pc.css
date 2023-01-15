@@ -11,7 +11,7 @@ div#formulario {
 
 section#login {
    width: 1150px;
-   height: 600px;
+   height: 450px;
 }
 
 section#login > div#imagem{
@@ -22,4 +22,12 @@ section#login > div#imagem{
 section#login > div#formulario{
     width: 50%;
     float: left;
+}
+
+.campo > input {
+    transform: translateY(-18px);
+}
+
+.campo span {
+    transform: translateY(-5px);
 }

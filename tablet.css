@@ -6,6 +6,7 @@ body {
 
 section#login {
     width: 90vw;
+    height: 400px;
 }
 
 section#login > div#imagem{
