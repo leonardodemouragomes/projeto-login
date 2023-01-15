@@ -52,14 +52,11 @@ div#formulario {
 }
 
 .campo  {
+    background-color: var(--cor01);
     height: 40px;
     color: var(--cor02);
-    border-radius: 10px;
-    margin: 5px;
-}
-
-input[type='email'], input[type='password'], label {
-    background-color: var(--cor02);
+    border-radius: 5px;
+    margin: 5px 0px;
 }
 
 .campo span {
