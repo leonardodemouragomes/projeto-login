@@ -31,8 +31,8 @@ section#login {
     left:50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 275px;
+    height: 525px;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
@@ -49,4 +49,57 @@ section#login > div#imagem {
 
 div#formulario {
     padding: 10px;
+}
+
+.campo  {
+    height: 40px;
+    color: var(--cor02);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+input[type='email'], input[type='password'], label {
+    background-color: var(--cor02);
+}
+
+.campo span {
+    color: black;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+form > input[type='submit']  {
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: var(--cor02);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+form > input[type='submit']:hover {
+    background-color: var(--cor01);
+    transition: background-color .5s;
+}
+
+form > a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: var(--cor02);
+    border: 1px solid var(--cor02);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form > a:hover {
+    transition: color .5s;
+    color: var(--cor01);
+    border: 1px solid var(--cor01);
 }

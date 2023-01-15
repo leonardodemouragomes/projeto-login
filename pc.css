@@ -4,14 +4,22 @@ body {
     background-image: linear-gradient(to top, var(--cor02), var(--cor01));
 }
 
+
+div#formulario {
+    font-size: 1.3em;
+}
+
 section#login {
-   width: 1000px;
+   width: 1150px;
+   height: 600px;
 }
 
 section#login > div#imagem{
     width: 50%;
+    float: right;
 }
 
 section#login > div#formulario{
     width: 50%;
+    float: left;
 }
