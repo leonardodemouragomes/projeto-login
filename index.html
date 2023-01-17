@@ -12,39 +12,39 @@
 </head>
 <body>
     <main>
-        <section  id="login">
-            <div  id="imagem">
-            </div>
+        <form action="">
             <div id="formulario">
-                <h1>Login</h1>
+                <h1><span>Lo</span>gin</h1>
                 <p>Seja bem-vindo(a) novamente!</p>
                 <p>Faça o login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <div class="campo">
-                        <label for="login">
-                            <span class="material-symbols-outlined">
-                                person
-                                </span>
+                <div class="inputs">
+                    <div class="input_box">
+                        <label for="user">
+                            Nome<br>
+                            <div class="input_field">
+                                <i  class="material-symbols-outlined" >person</i>
+                                <input type="email" name="user" id="user" autocomplete="email" placeholder="E-mail" required>
+                            </div>
                         </label>
-                        <input type="email" name="login" id="login" placeholder="Seu e-mail" autocomplete="email">
-                        <label for="login"></label> 
                     </div>
-                    <div class="campo">
-                        <label for="senha">
-                            <span class="material-symbols-outlined">
-                                vpn_key
-                                </span>
+                    <div class="input_box">
+                        <label for="password">
+                            Senha
+                            <div class="input_field">
+                                <i class="material-symbols-outlined">key</i>
+                                <input type="password" name="password" id="password" placeholder="Senha" required>
+                            </div>
                         </label>
-                        <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="20">
-                        <label for="senha"></label>
                     </div>
-                    <input type="submit" value="Entrar">
-                    <a href="#">Esqueci a senha <span class="material-symbols-outlined">
-                        key_off
-                        </span></a>
-                </form>
+                </div>
+                <a id="esqueceu" href="#">Esqueceu a senha?</a>
             </div>
-        </section>
+            <div class="botoes">
+                <div class="botao">
+                    <input id="login" type="button" value="Login">
+                </div>
+            </div>
+        </form> 
     </main>
 </body>
 </html>
