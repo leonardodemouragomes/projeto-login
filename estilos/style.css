@@ -82,6 +82,7 @@ main {
 
 .input_field input:focus {
     outline: none;
+    background-color: transparent;
 }
 
 #esqueceu {
