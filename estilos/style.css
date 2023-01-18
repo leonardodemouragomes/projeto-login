@@ -113,6 +113,6 @@ main {
 }
 .botao:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(to right, var(--cor02), var(--cor05) );
+    background-image: linear-gradient(to right, var(--cor01), var(--cor05) );
     transition: transform .3s;
 }
